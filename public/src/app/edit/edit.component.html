@@ -1,0 +1,12 @@
+<a [routerLink] = "['/']">Home</a>
+<h4>Edit this author</h4>
+
+<form>
+    <p>{{ editAuthor | json }}</p>
+    <label>name:
+        <input type="text" name="editAuthor.name" [(ngModel)]="editAuthor.name">
+    </label>
+
+    <input type="submit" value="Submit" (click)="onEdit()">
+
+</form>
